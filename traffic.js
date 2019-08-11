@@ -11,7 +11,8 @@ var n = 0;  // state inital variable in colour sequence //
 						
 					        // PROBLEMS: // 
 
-	      // WHAT I WANT THIS SCRIPT TO DO: Starting at red, want to increment by 1 to get to green. Once it hits green, decrement back down to red //  
+	      // WHAT I WANT THIS SCRIPT TO DO: Starting at red, want to increment by 1 to get to green. Once it hits green, decrement 
+             // back down to red //  
 
 	     // Do not understand how to link the id's in my HTML & CSS to the script. Need some feedback of creating a function to do 
 	     // this. // 
