@@ -1,4 +1,5 @@
-"use strict";
+
+// Red is #FF4500, Yellow is #656565, Green is #ADFF2F // 
 
 var colours = [ "#FF4500", "#656565", "#ADFF2F" ]; // colour sequencing //
 
@@ -6,13 +7,15 @@ var n = 0;  // state inital variable in colour sequence //
 
 // var Red = document.getElementById("red"); // 
 // var Yellow = document.getElementById("yellow"); //
-//  Green = document.getElementById("green"); // 
+// var Green = document.getElementById("green"); // 
 						
-					        // PROBLEM - SEE BELOW // 
+					        // PROBLEMS: // 
 
-	      // Starting at red, want to increment by 1 to get to green. Once it hits green, decrement back down to red //  
+	      // WHAT I WANT THIS SCRIPT TO DO: Starting at red, want to increment by 1 to get to green. Once it hits green, decrement back down to red //  
 
-			               // Have no idea what I'm doing below :-(  //
+	     // Do not understand how to link the id's in my HTML & CSS to the script. Need some feedback of creating a function to do 
+	     // this. // 
+				      
 
 
 
