@@ -1,0 +1,116 @@
+h2 {
+	text-align: center;
+}
+
+#black-box {			/* grey box */
+	background: grey;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+	
+}
+
+#light-box { 			/* blue box */
+	background: skyblue;
+	margin: auto; 
+	width: 35%;
+		
+} 
+
+
+#light-box .light-off {
+	border: 2px solid;
+	width: 20px;
+	height: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px; 
+	border-radius: 30px; 
+	padding: 20px; 
+		
+	
+}
+
+/* when the screen is 75% minimized 
+	
+	@media only screen and (max-width: 85em){
+		
+		h2 {
+			color: green;
+			text-align: center;
+			
+		}
+		
+		#light-box .light-off {
+			border: 2px solid;
+			width: 20px;
+			height: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px; 
+			border-radius: 30px; 
+			padding: 20px;  
+			
+		}
+		
+		
+		
+} */
+
+/* when the screen is 75% minimized */
+	
+	@media only screen and (max-width: 75em){
+		
+		h2 {
+			color: green;
+			text-align: center;
+			
+		}
+		
+		#light-box .light-off {
+			border: 2px solid;
+			width: 20px;
+			height: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px; 
+			border-radius: 30px; 
+			padding: 15px;  
+			
+		}
+			
+		
+}
+
+
+/* when the screen is 50% minimized */
+	
+	@media only screen and (max-width: 60em){
+		
+		h2 {
+			color: blue;
+			text-align: center;
+			
+		}
+		
+		#light-box .light-off {
+			border: 2px solid;
+			width: 20px;
+			height: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px; 
+			border-radius: 30px; 
+			padding: 5px;  
+			
+		}
+			
+		
+}
+
+
+
+
+
+
+
