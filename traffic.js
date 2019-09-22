@@ -1,5 +1,4 @@
 
-
 var colours = [ "red", "yellow", "green" ]; // colour sequencing //
 
 var n = 0;  // state inital variable in colour sequence //
