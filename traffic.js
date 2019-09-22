@@ -1,44 +1,54 @@
 
-// Red is #FF4500, Yellow is #656565, Green is #ADFF2F // 
-
-var colours = [ "#FF4500", "#656565", "#ADFF2F" ]; // colour sequencing //
+var colours = [ "red", "yellow", "green" ]; // colour sequencing //
 
 var n = 0;  // state inital variable in colour sequence //
 
-// var Red = document.getElementById("red"); // 
-// var Yellow = document.getElementById("yellow"); //
-// var Green = document.getElementById("green"); // 
-						
-					        // PROBLEMS: // 
 
-	      // WHAT I WANT THIS SCRIPT TO DO: Starting at red, want to increment by 1 to get to green. Once it hits green, decrement 
-             // back down to red //  
+//this ensures the content loads fully
+window.addEventListener('load', start);
 
-	     // Do not understand how to link the id's in my HTML & CSS to the script. Need some feedback of creating a function to do 
-	     // this. // 
-				      
-
-
-
-function colour_change() {
- 
- // when n goes to the last colour, will decrease count back down to red //
-	
- 	if ( n == 3) {
-		green.style.backgroundColor = colours[n];
-		yellow.style.backgroundColor = colours[n - 1];
-		Red.style.backgroundColor = colours[n - 2];
-	} 
-	
-	
-	else {
-		red.style.backgroundColor = colours[n];
-		yellow.style.backgroundColor = colours[n + 1];
-		green.style.backgroundColor = colours[n + 2];
-	}
-		
+function start()
+{
+    var changeColours = setInterval(colour_change, 2000)
 }
 
-colour_change() // call function //
+function colour_change() 
+{
+    // the light will change in the order: red, green, yellow 
+    if (n == 0) { 
+		 n = 2;
+		}
+    else { 
+		 n = n - 1;
+		}
+    
+    // create a reference to the divs
+    var red = document.getElementById("red");
+    var green = document.getElementById("green");
+    var yellow = document.getElementById("yellow");
 
-// setInterval (<function>, milliseconds) //
+    // when n goes to the last colour, will decrease count back down to red 
+    
+    // red = 0, green = 2, yellow = 1 | #33333 = black 
+    switch (n)
+    {
+        case 0:
+            red.style.backgroundColor = colours[0];
+            yellow.style.backgroundColor = "#333333";
+            green.style.backgroundColor = "#333333";
+            break;
+        case 1:
+            red.style.backgroundColor = "#333333";
+            yellow.style.backgroundColor = colours[1];
+            green.style.backgroundColor = "#333333";
+            break;
+        case 2:
+            red.style.backgroundColor = "#333333";
+            yellow.style.backgroundColor = "#333333";
+            green.style.backgroundColor = colours[2];
+            break;
+    }
+
+    // to help debug //
+    console.log(n);
+}
