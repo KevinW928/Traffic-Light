@@ -1,4 +1,4 @@
-// Code updated as of Sept 22, 2019
+
 
 var colours = [ "red", "yellow", "green" ]; // colour sequencing //
 
