@@ -2,16 +2,16 @@ h2 {
 	text-align: center;
 }
 
-#black-box {			/* grey box */
-	background: grey;
+#black-box {			/* black outer box */
+	background: black;
 	margin-left: auto;
 	margin-right: auto;
 	width: 15%;
 	
 }
 
-#light-box { 			/* blue box */
-	background: skyblue;
+#light-box { 			/* yellowish-green inner box */
+	background: yellowgreen;
 	margin: auto; 
 	width: 35%;
 		
